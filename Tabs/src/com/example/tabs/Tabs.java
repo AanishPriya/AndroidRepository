@@ -14,6 +14,7 @@ public class Tabs extends Activity implements OnClickListener {
 
 	TabHost tabHost;
 	//Git Test
+	//Test1
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
