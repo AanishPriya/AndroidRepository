@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConnectionTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="Save">Save</string>
+    <string name="Data">Enter data here</string>
+
+</resources>
