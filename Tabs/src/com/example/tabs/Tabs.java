@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ExpandableListView;
 //import android.widget.Button;
 import android.widget.TabHost;
 //import android.widget.TextView;
@@ -13,8 +14,8 @@ import android.widget.TabHost.TabSpec;
 public class Tabs extends Activity implements OnClickListener {
 
 	TabHost tabHost;
-	//Git Test
-	//Test1
+	ExpandableListView explv;
+	
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,10 @@ public class Tabs extends Activity implements OnClickListener {
         //Button btnSearch = (Button) findViewById (R.id.btn_search);
 		//btnSearch.setOnClickListener(this);
         editTab();
+        //1.Initialize the expandable listview
+        explv = (ExpandableListView) findViewById(R.id.expandableListView1);
+        //2.create adapter
+        explv.setAdapter(new MyAdapter(this));
     }
 
 
